@@ -117,24 +117,7 @@ direction_horizontal = tk.Radiobutton(root, text="Horizontal", variable=directio
 direction_horizontal.grid(row=1, column=1)
 direction_vertical = tk.Radiobutton(root, text="Vertical", variable=direction_var, value="vertical")
 direction_vertical.grid(row=1, column=2)
-'''
-# Number of divisions
-num_divisions_label = tk.Label(root, text="Number of divisions:")
-num_divisions_label.grid(row=2, column=0)
-num_divisions_var = tk.IntVar(value=2)
-num_divisions_2 = tk.Radiobutton(root, text="2", variable=num_divisions_var, value=2)
-num_divisions_2.grid(row=3, column=0)
-num_divisions_3 = tk.Radiobutton(root, text="3", variable=num_divisions_var, value=3)
-num_divisions_3.grid(row=3, column=1)
-num_divisions_4 = tk.Radiobutton(root, text="4", variable=num_divisions_var, value=4)
-num_divisions_4.grid(row=3, column=2)
-num_divisions_5 = tk.Radiobutton(root, text="5", variable=num_divisions_var, value=5)
-num_divisions_5.grid(row=4, column=0)
-num_divisions_6 = tk.Radiobutton(root, text="6", variable=num_divisions_var, value=6)
-num_divisions_6.grid(row=4, column=1)
-num_divisions_7 = tk.Radiobutton(root, text="7", variable=num_divisions_var, value=7)
-num_divisions_7.grid(row=4, column=2)
-'''
+
 # Number of divisions
 num_divisions_label = tk.Label(root, text="Number of divisions:")
 num_divisions_label.grid(row=2, column=0)
