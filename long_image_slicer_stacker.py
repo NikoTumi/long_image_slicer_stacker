@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Prompt:
+AI used: Bing - CoPilot aka ChatGPT4
+
+1st Prompt: (main slice and stack function)
     write a python script that divides, by num_divisions, an image's width or height, 
 dependent on user direction is horizontal divides height or vertical divides width. 
 the split pieces will then be pieced back together into new image either stacking them ontop of 
@@ -10,9 +12,17 @@ stacked and by number of divisions. the function name and inputs are
 split_image_and_stack(image_path, output_path, direction, num_divisions) and it 
 should have a progress bar
 
+2nd Prompt: (gui interface)
+    [In the frenzy of troubleshooting, I lost this prompt, but I think it was something as follows]
+    write a python function that uses tkinter gui popup window that asks user for file and stores into 
+variable image_path. sets output_path to the same directory path as the image_path, asks user for direction
+ which is either verticle or horizontal, asks for number of divisions using scrollable number selection and 
+returns to variable num_divisions from 2 to 12 integers, and asks the user via check box to save_pieces.
+    
 Issues:
     the math was incorrect on where to paste the piece of the image, changed to 
     height from piece_size fixed the issue.
+    Default options were manipulated to fit what I wanted in the gui code.
 """
 
 import tkinter as tk
